@@ -1,0 +1,115 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: rgb(255,168,63);
+    background: linear-gradient(112deg, rgba(255,168,63,1) 14%, rgba(235,235,235,1) 100%);
+}
+
+
+header{
+    font-weight: 700;
+}
+
+.card {
+    box-shadow: -7px 11px 17px 0px rgba(0,0,0,0.73);
+
+animation: twoAnimation 2s ease-in-out 0s 1 normal none;
+
+}
+
+.down{
+    animation: yourAnimation 2s ease-in-out 0s 1 normal none;
+
+}
+
+@keyframes yourAnimation {
+    0.0%{
+        transform: translate(0,-150px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+    60.2%{
+        transform: translate(0,10px);
+        opacity: 0.8;
+    }
+}
+
+@keyframes twoAnimation {
+    0.0%{
+        opacity: 0;
+        transform: translate(0,150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+    60.2%{
+        opacity: 0.8;
+        transform: translate(0,-10px);
+    }
+}
+
+@keyframes graphupfade {
+    0.0%{
+        opacity: 0;
+        transform: translate(0,100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+
+.keys{
+    color:#787878;
+    display: block;
+}
+
+.card{
+    margin-bottom: 2em;
+}
+
+.card-text{
+    font-weight: 700;
+    padding-left: 4em;
+}
+
+.card-title{
+    display: inline-block;
+    margin-left: 0.4em;
+}
+
+
+.values{
+    font-weight: 700 !important;
+}
+
+#copyright{
+    font-weight: 500;
+}
+
+.panel{
+    height: 200px;
+}
+
+#chart_div{
+    box-shadow: -7px 11px 17px 0px rgba(0,0,0,0.73);
+    animation: graphupfade 1.5s ease 0s 1 normal none;
+
+}
+
+.distri{
+    font-weight: 600;
+}
+
+.navbar-brand{
+    font-size: 2em;
+}
